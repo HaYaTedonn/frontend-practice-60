@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>フォーム検証</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>新規登録</h1>
+  <form id="form" novalidate>
+    <label>お名前
+      <input type="text" id="name">
+    </label>
+    <p class="error" id="name-err"></p>
+
+    <label>メール
+      <input type="text" id="email">
+    </label>
+    <p class="error" id="email-err"></p>
+
+    <label>パスワード
+      <input type="password" id="password">
+    </label>
+    <p class="error" id="password-err"></p>
+
+    <button type="submit">登録</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+body { font-family: sans-serif; padding: 20px; }
+label { display: block; margin: 8px 0; }
+.target {
+  margin-top: 24px;
+  font-size: 20px;
+}

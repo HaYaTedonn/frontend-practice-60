@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>チャット</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat">
+    <header class="chat-header">
+      <span>チャット</span>
+      <button id="clear">履歴を消す</button>
+    </header>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="typing" id="typing" hidden>
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="input-area">
+      <textarea id="input" placeholder="メッセージを入力…" rows="1"></textarea>
+      <button id="send">送信</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body { font-family: sans-serif; text-align: center; padding: 30px; }
+.inputs { margin: 20px; }
+input { width: 60px; padding: 6px; text-align: center; font-size: 18px; }
+#display {
+  font-size: 96px;
+  font-weight: bold;
+  font-family: monospace;
+  margin: 20px 0;
+  color: #111;
+  transition: 0.3s;
+}
+#display.warn { color: #ef4444; }
+#display.blink { animation: blink 0.5s infinite; }
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.3; }
+}
+.buttons { display: flex; gap: 10px; justify-content: center; }
+button { padding: 10px 20px; cursor: pointer; font-size: 16px; border: none; border-radius: 6px; background: #e5e7eb; }
+button:disabled { opacity: 0.4; cursor: not-allowed; }

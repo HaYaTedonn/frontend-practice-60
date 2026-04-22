@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background: #dbeafe;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* ここにレスポンシブなスタイルを書く */

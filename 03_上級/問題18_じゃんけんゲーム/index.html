@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>じゃんけん</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>じゃんけん</h1>
+
+  <div class="board">
+    <div class="hand"><span class="label">あなた</span><span class="emoji" id="playerHand">❓</span></div>
+    <div class="vs">VS</div>
+    <div class="hand"><span class="label">CPU</span><span class="emoji" id="cpuHand">❓</span></div>
+  </div>
+
+  <div class="result" id="result">手を選んでね</div>
+
+  <div class="buttons">
+    <button data-hand="rock">✊ グー</button>
+    <button data-hand="scissors">✌️ チョキ</button>
+    <button data-hand="paper">✋ パー</button>
+  </div>
+
+  <div class="score" id="score"></div>
+  <button id="resetScore">戦績リセット</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

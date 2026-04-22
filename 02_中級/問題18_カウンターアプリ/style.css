@@ -1,0 +1,19 @@
+body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px; }
+.counter { text-align: center; }
+#display {
+  font-size: 96px;
+  font-weight: bold;
+  color: gray;
+  margin: 20px 0;
+  min-width: 200px;
+}
+.buttons { display: flex; gap: 12px; justify-content: center; }
+.buttons button {
+  font-size: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #e5e7eb;
+}
+.hint { color: #9ca3af; margin-top: 20px; }

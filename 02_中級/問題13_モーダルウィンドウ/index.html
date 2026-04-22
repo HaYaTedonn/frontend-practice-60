@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>モーダル</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>モーダルウィンドウ</h1>
+  <button id="openBtn">モーダルを開く</button>
+
+  <div class="modal-overlay" id="modal" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" id="closeX" aria-label="閉じる">&times;</button>
+      <h2>お知らせ</h2>
+      <p>これはモーダルウィンドウの本文です。背景クリック or Esc でも閉じます。</p>
+      <button id="closeBtn">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #e5e7eb; padding: 10px; text-align: left; }
+thead th {
+  background: #f3f4f6;
+  cursor: pointer;
+  user-select: none;
+}
+thead th:hover { background: #e5e7eb; }
+.arrow { display: inline-block; margin-left: 4px; color: #3b82f6; }

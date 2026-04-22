@@ -1,0 +1,16 @@
+body { font-family: sans-serif; margin: 0; }
+.stage {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+}
+
+.btn:hover {
+}
+
+.btn:active {
+}

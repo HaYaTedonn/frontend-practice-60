@@ -1,0 +1,20 @@
+body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: vertical;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+#count { color: #6b7280; }
+#count.over { color: #ef4444; font-weight: bold; }
+#clear { padding: 6px 14px; cursor: pointer; }

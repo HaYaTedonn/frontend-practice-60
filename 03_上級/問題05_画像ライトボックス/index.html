@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ライトボックス</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ギャラリー</h1>
+  <div class="grid" id="grid">
+    <img src="https://placehold.jp/f87171/ffffff/400x300.png?text=1" alt="1">
+    <img src="https://placehold.jp/34d399/ffffff/400x300.png?text=2" alt="2">
+    <img src="https://placehold.jp/60a5fa/ffffff/400x300.png?text=3" alt="3">
+    <img src="https://placehold.jp/fbbf24/ffffff/400x300.png?text=4" alt="4">
+    <img src="https://placehold.jp/a78bfa/ffffff/400x300.png?text=5" alt="5">
+    <img src="https://placehold.jp/f472b6/ffffff/400x300.png?text=6" alt="6">
+  </div>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="close" id="close">&times;</button>
+    <button class="nav prev" id="prev">&lsaquo;</button>
+    <img id="bigImage" alt="">
+    <button class="nav next" id="next">&rsaquo;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

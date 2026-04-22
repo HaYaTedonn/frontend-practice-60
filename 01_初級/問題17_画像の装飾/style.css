@@ -1,0 +1,18 @@
+body { font-family: sans-serif; padding: 20px; }
+
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.img-round {
+}
+
+.img-circle {
+}
+
+.img-filter {
+}
+
+.img-filter:hover {
+}

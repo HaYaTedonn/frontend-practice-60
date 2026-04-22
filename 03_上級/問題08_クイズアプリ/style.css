@@ -1,0 +1,22 @@
+body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+#qNum { color: #6b7280; }
+h2 { margin: 16px 0 24px; }
+#options { display: grid; gap: 10px; }
+.opt {
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s;
+  font-size: 15px;
+}
+.opt:hover { background: #f3f4f6; }
+.opt.correct { border-color: #10b981; background: #d1fae5; }
+.opt.wrong { border-color: #ef4444; background: #fee2e2; }
+.opt:disabled { cursor: not-allowed; }
+
+#result { text-align: center; padding: 40px 0; }
+#result h2 { font-size: 28px; }
+#retry { padding: 12px 24px; font-size: 16px; cursor: pointer; background: #3b82f6; color: white; border: none; border-radius: 8px; }

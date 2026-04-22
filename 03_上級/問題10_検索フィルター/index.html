@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>検索フィルター</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>商品検索</h1>
+  <div class="controls">
+    <input type="text" id="search" placeholder="商品名を検索…">
+    <div class="filters">
+      <label><input type="radio" name="cat" value="all" checked>すべて</label>
+      <label><input type="radio" name="cat" value="家具">家具</label>
+      <label><input type="radio" name="cat" value="家電">家電</label>
+      <label><input type="radio" name="cat" value="食品">食品</label>
+    </div>
+  </div>
+
+  <p id="count"></p>
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# 解答・解説は公開しない
+_解答・解説/
+
+# OS/エディタの自動生成ファイル
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node関連（使う場合）
+node_modules/
+npm-debug.log*

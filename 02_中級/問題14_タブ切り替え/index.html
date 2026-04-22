@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>タブ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>タブ切り替え</h1>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="1">HTML</button>
+    <button class="tab" data-tab="2">CSS</button>
+    <button class="tab" data-tab="3">JavaScript</button>
+  </div>
+
+  <section class="content" data-content="1">
+    <h2>HTML</h2>
+    <p>Webページの構造を作るマークアップ言語です。</p>
+  </section>
+  <section class="content" data-content="2" hidden>
+    <h2>CSS</h2>
+    <p>見た目を整えるスタイルシート言語です。</p>
+  </section>
+  <section class="content" data-content="3" hidden>
+    <h2>JavaScript</h2>
+    <p>ウェブページに動きを加えるプログラミング言語です。</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

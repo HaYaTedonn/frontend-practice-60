@@ -1,0 +1,8 @@
+body { font-family: sans-serif; padding: 20px; }
+button { padding: 8px 16px; margin-right: 8px; cursor: pointer; }
+.secret {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fef3c7;
+  border-radius: 6px;
+}

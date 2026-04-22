@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メモアプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <button id="newBtn">+ 新規</button>
+      <ul id="list"></ul>
+    </aside>
+
+    <section class="editor" id="editor" hidden>
+      <input type="text" id="title" placeholder="タイトル">
+      <textarea id="body" placeholder="本文…"></textarea>
+      <div class="actions">
+        <button id="deleteBtn">削除</button>
+        <span id="savedAt"></span>
+      </div>
+    </section>
+
+    <div class="placeholder" id="placeholder">メモを選択してください</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

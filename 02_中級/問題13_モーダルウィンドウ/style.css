@@ -1,0 +1,33 @@
+body { font-family: sans-serif; padding: 20px; }
+button { padding: 8px 16px; cursor: pointer; }
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-panel {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+body.no-scroll { overflow: hidden; }

@@ -1,0 +1,16 @@
+body { font-family: sans-serif; padding: 20px; max-width: 500px; margin: auto; text-align: center; }
+.search { display: flex; gap: 8px; }
+#city { flex: 1; padding: 10px; font-size: 16px; border: 1px solid #d1d5db; border-radius: 6px; }
+#fetch { padding: 10px 20px; cursor: pointer; }
+.result {
+  margin-top: 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  color: white;
+  border-radius: 12px;
+  min-height: 100px;
+}
+.result .emoji { font-size: 60px; }
+.result .temp { font-size: 40px; font-weight: bold; margin: 10px 0; }
+.result .meta { color: #e5e7eb; }
+.result.error { background: #fee2e2; color: #b91c1c; }

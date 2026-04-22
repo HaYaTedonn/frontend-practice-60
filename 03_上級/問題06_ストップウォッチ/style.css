@@ -1,0 +1,22 @@
+body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 80vh; }
+.watch { text-align: center; }
+#display {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: monospace;
+  background: #111;
+  color: #10b981;
+  padding: 20px 40px;
+  border-radius: 12px;
+  letter-spacing: 4px;
+}
+.buttons { margin-top: 20px; display: flex; gap: 12px; justify-content: center; }
+.buttons button {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e5e7eb;
+}
+.buttons button:disabled { opacity: 0.5; cursor: not-allowed; }

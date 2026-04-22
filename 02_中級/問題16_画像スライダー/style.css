@@ -1,0 +1,31 @@
+body { font-family: sans-serif; padding: 20px; }
+.slider {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.slide {
+  width: 100%;
+  border-radius: 8px;
+}
+.controls {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.controls button { padding: 8px 16px; cursor: pointer; }
+.dots {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.dot.active { background: #3b82f6; }

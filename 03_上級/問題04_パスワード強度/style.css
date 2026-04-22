@@ -1,0 +1,22 @@
+body { font-family: sans-serif; padding: 20px; max-width: 400px; margin: auto; }
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.bar-wrap {
+  margin-top: 12px;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bar {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s, background 0.3s;
+  background: red;
+}
+#label { margin-top: 8px; font-weight: bold; }
