@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML / CSS / JS 学習問題集</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; margin: 0; background: #f9fafb; color: #111; line-height: 1.6; }
+  header { background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; padding: 60px 20px 100px; text-align: center; }
+  header h1 { margin: 0 0 8px; font-size: 32px; }
+  header p { margin: 0; opacity: 0.9; }
+  main { max-width: 1100px; margin: -60px auto 40px; padding: 0 20px; position: relative; }
+  section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  section h2 { margin: 0 0 6px; font-size: 22px; display: flex; align-items: center; gap: 8px; }
+  section .sub { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .card { display: block; padding: 14px 16px; background: #f3f4f6; border-radius: 10px; text-decoration: none; color: #111; transition: 0.2s; border-left: 3px solid transparent; }
+  .card:hover { background: #e5e7eb; transform: translateY(-2px); border-left-color: #3b82f6; }
+  .card .num { color: #6b7280; font-size: 12px; font-weight: 600; }
+  .card .title { font-weight: 600; margin: 4px 0; font-size: 15px; }
+  .card .stars { color: #f59e0b; letter-spacing: 2px; font-size: 13px; font-family: monospace; }
+  .card .stars .empty { color: #d1d5db; }
+  footer { text-align: center; color: #6b7280; padding: 20px; font-size: 13px; }
+  .meta { display: flex; gap: 12px; justify-content: center; margin-top: 16px; font-size: 13px; opacity: 0.9; }
+  .meta span { background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 999px; }
+  @media (max-width: 600px) {
+    header { padding: 40px 20px 80px; }
+    header h1 { font-size: 24px; }
+    section { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>🎯 HTML / CSS / JavaScript 学習問題集</h1>
+    <p>全60問をレベル順に解いて、フロントエンドの基礎を身につけよう</p>
+    <div class="meta">
+      <span>📘 初級 20問</span>
+      <span>📗 中級 20問</span>
+      <span>📕 上級 20問</span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>📘 初級編</h2>
+      <p class="sub">HTML と CSS の基礎 ・ 難易度 ★1〜★5</p>
+      <div class="grid" id="beginner"></div>
+    </section>
+
+    <section>
+      <h2>📗 中級編</h2>
+      <p class="sub">ページ制作と JS 入門 ・ 難易度 ★3〜★7</p>
+      <div class="grid" id="intermediate"></div>
+    </section>
+
+    <section>
+      <h2>📕 上級編</h2>
+      <p class="sub">実用的な機能の実装 ・ 難易度 ★5〜★10</p>
+      <div class="grid" id="advanced"></div>
+    </section>
+  </main>
+
+  <footer>© 2026 HTML / CSS / JS 学習問題集</footer>
+
+<script>
+const data = {
+  beginner: {
+    dir: "01_初級",
+    items: [
+      [1, "HTMLの基本構造", 1, "問題01_HTMLの基本構造"],
+      [2, "見出しと段落", 1, "問題02_見出しと段落"],
+      [3, "リスト（ul / ol）", 1, "問題03_リスト"],
+      [4, "画像とリンク", 2, "問題04_画像とリンク"],
+      [5, "文字色と背景色", 2, "問題05_文字色と背景色"],
+      [6, "フォントの指定", 2, "問題06_フォントの指定"],
+      [7, "margin と padding", 2, "問題07_marginとpadding"],
+      [8, "border の装飾", 3, "問題08_borderの装飾"],
+      [9, "テーブルを作る", 3, "問題09_テーブルを作る"],
+      [10, "フォームの基礎", 3, "問題10_フォームの基礎"],
+      [11, "class と id の使い分け", 3, "問題11_classとidの使い分け"],
+      [12, ":hover で見た目を変える", 3, "問題12_hoverで見た目を変える"],
+      [13, "display（block / inline）", 4, "問題13_display"],
+      [14, "Flexbox で横並び", 4, "問題14_Flexboxで横並び"],
+      [15, "Grid でレイアウト", 4, "問題15_Gridでレイアウト"],
+      [16, "position で配置", 4, "問題16_positionで要素を配置"],
+      [17, "画像の装飾", 4, "問題17_画像の装飾"],
+      [18, "カード型 UI", 5, "問題18_カード型UI"],
+      [19, "ナビゲーションバー", 5, "問題19_ナビゲーションバー"],
+      [20, "プロフィールページ", 5, "問題20_プロフィールページ"],
+    ],
+  },
+  intermediate: {
+    dir: "02_中級",
+    items: [
+      [1, "メディアクエリ", 3, "問題01_メディアクエリ"],
+      [2, "transition", 3, "問題02_transition"],
+      [3, "@keyframes アニメーション", 4, "問題03_keyframesアニメーション"],
+      [4, "JSの基本", 4, "問題04_JSの基本"],
+      [5, "querySelector", 4, "問題05_querySelector"],
+      [6, "click イベント", 4, "問題06_clickイベント"],
+      [7, "classList", 5, "問題07_classList"],
+      [8, "style プロパティ", 5, "問題08_styleプロパティ"],
+      [9, "if 文", 5, "問題09_if文"],
+      [10, "for 文", 5, "問題10_for文"],
+      [11, "ヘッダーとフッター", 5, "問題11_ヘッダーとフッター"],
+      [12, "ハンバーガーメニュー", 6, "問題12_ハンバーガーメニュー"],
+      [13, "モーダルウィンドウ", 6, "問題13_モーダルウィンドウ"],
+      [14, "タブ切り替え", 6, "問題14_タブ切り替え"],
+      [15, "アコーディオン", 6, "問題15_アコーディオン"],
+      [16, "画像スライダー", 6, "問題16_画像スライダー"],
+      [17, "フォーム入力チェック", 6, "問題17_フォーム入力チェック"],
+      [18, "カウンターアプリ", 7, "問題18_カウンターアプリ"],
+      [19, "ToDo リスト（基本）", 7, "問題19_ToDoリスト基本"],
+      [20, "ランディングページ", 7, "問題20_ランディングページ"],
+    ],
+  },
+  advanced: {
+    dir: "03_上級",
+    items: [
+      [1, "ダークモード切替", 5, "問題01_ダークモード切替"],
+      [2, "LocalStorage", 6, "問題02_LocalStorage"],
+      [3, "ToDo（保存付き）", 6, "問題03_ToDoリスト保存"],
+      [4, "パスワード強度", 6, "問題04_パスワード強度"],
+      [5, "画像ライトボックス", 7, "問題05_画像ライトボックス"],
+      [6, "ストップウォッチ", 7, "問題06_ストップウォッチ"],
+      [7, "カウントダウンタイマー", 7, "問題07_カウントダウンタイマー"],
+      [8, "クイズアプリ", 7, "問題08_クイズアプリ"],
+      [9, "スクロールアニメーション", 8, "問題09_スクロールアニメーション"],
+      [10, "検索フィルター", 8, "問題10_検索フィルター"],
+      [11, "ソート機能付きテーブル", 8, "問題11_ソート機能付きテーブル"],
+      [12, "ページネーション", 8, "問題12_ページネーション"],
+      [13, "Fetch API", 8, "問題13_FetchAPI"],
+      [14, "天気アプリ", 9, "問題14_天気アプリ"],
+      [15, "メモアプリ（CRUD）", 9, "問題15_メモアプリCRUD"],
+      [16, "ドラッグ&ドロップ", 9, "問題16_ドラッグ&ドロップ"],
+      [17, "電卓アプリ", 9, "問題17_電卓アプリ"],
+      [18, "じゃんけんゲーム", 9, "問題18_じゃんけんゲーム"],
+      [19, "チャット UI", 10, "問題19_チャットUI"],
+      [20, "SPA 風サイト", 10, "問題20_SPA風サイト"],
+    ],
+  },
+};
+
+function stars(n) {
+  return '★'.repeat(n) + `<span class="empty">${'☆'.repeat(10 - n)}</span>`;
+}
+
+for (const [key, { dir, items }] of Object.entries(data)) {
+  const container = document.getElementById(key);
+  container.innerHTML = items.map(([n, title, diff, folder]) => `
+    <a class="card" href="${dir}/${encodeURIComponent(folder)}/">
+      <div class="num">No. ${String(n).padStart(2, '0')}</div>
+      <div class="title">${title}</div>
+      <div class="stars">${stars(diff)}</div>
+    </a>
+  `).join('');
+}
+</script>
+</body>
+</html>

@@ -29,3 +29,15 @@
   - 例: `border: 2px solid blue;`
 - 種類: `solid`（実線）/ `dotted`（点線）/ `dashed`（破線）/ `double`（二重）
 - 角を丸める: `border-radius: 8px`
+
+---
+
+<details>
+<summary>🖼 期待される見た目（クリックで展開）</summary>
+
+<!-- 画像を追加するとき: このフォルダに preview.png を保存し、次の行のコメントを外す -->
+<!-- ![期待される見た目](preview.png) -->
+
+> 💡 模範解答をブラウザで開いてスクリーンショットを撮り、`preview.png` としてこのフォルダに保存すると、上の行のコメントを外すだけでプレビュー画像が表示されます。
+
+</details>
