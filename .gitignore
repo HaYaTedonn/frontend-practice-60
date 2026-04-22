@@ -13,3 +13,6 @@ Thumbs.db
 # Node関連（使う場合）
 node_modules/
 npm-debug.log*
+
+# Playwright MCP のキャッシュ
+.playwright-mcp/
