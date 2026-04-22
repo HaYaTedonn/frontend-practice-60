@@ -33,9 +33,6 @@ document.addEventListener('keydown', (e) => {
 <details>
 <summary>🖼 期待される見た目（クリックで展開）</summary>
 
-<!-- 画像を追加するとき: このフォルダに preview.png を保存し、次の行のコメントを外す -->
-<!-- ![期待される見た目](preview.png) -->
-
-> 💡 模範解答をブラウザで開いてスクリーンショットを撮り、`preview.png` としてこのフォルダに保存すると、上の行のコメントを外すだけでプレビュー画像が表示されます。
+![期待される見た目](preview.png)
 
 </details>
